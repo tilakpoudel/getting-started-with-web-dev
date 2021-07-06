@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <!--Internal style-->
+        <style>
+            input {
+                color: red;
+                border-radius: 10px;
+            }
+            .form-input:hover {
+                background-color: yellow;
+            }
+        </style>
+
+        <!-- external style -->
+        <link rel="stylesheet" href="../style/css/style.css">
+    </head>
+    <body>
+        <h1>Css Types : </h1>
+        <ul>
+            <li>Inline
+                <p>with in html element .it has highest priority</p>
+            </li>
+            <li>Internal 
+                <p>defined Within same html file inside style tag in head section. it has priority after inline</p>
+            </li>
+            <li>External
+                <p>Css is included in external css file and is linked in head section. it has least priority</p>
+            </li>
+        </ul>
+        <div>
+            <label for="name">Name</label>
+            <!--Inline style-->
+            <input type="text" class="form-input" id="name" style=" border: 2px solid green;">
+
+            <label for="name">Address</label>
+            <input type="text" class="form-input" id="address">
+
+            <input type="submit" value="Submit" id="submit" >
+        </div>
+    </body>
+</html>
