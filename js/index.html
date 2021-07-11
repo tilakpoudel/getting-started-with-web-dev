@@ -7,17 +7,23 @@
         console.log("............let's start journey with javascript.................");
         // variables in js
         // var, let
-        var a = 10, x=100, y = 250;
+        var a = 10, x = 100, y = 250; // dynamically typed
         let b = 20;
-        var name = "Ram";
+        let p = 20.5;
+
+        var name = 'Ram';
+
+        console.log("The Type of name is : " + typeof name)
+        console.log("The Type of a is : " + typeof a)
+        console.log("The Type of p is : " + typeof p)
 
         let c = '10'
         let d = '20'
-        console.log("The result of c + d is :"+ (c+d)) // concatenation is done here....... because c and d are string
+        console.log("The result of c + d is :" + (c + d)) // concatenation is done here....... because c and d are string
 
         let e = 10
         let f = '20'
-        console.log("The result of e + f is : "+ (e+f)) // concatenation is done here....... because f is string but e is number and e get converted to string 
+        console.log("The result of e + f is : " + (e + f)) // concatenation is done here....... because f is string but e is number and e get converted to string 
 
         console.log("value of a is:")
         console.log(a)
@@ -34,10 +40,21 @@
 
         console.log("The sum of a and b is :" + sum)
 
-        let g // initialize variable 
+        let g // initialize/declare variable 
         console.log("the value of g before assigning is : " + g) // undefined 
         g = 200 // assign the value to the variable 
         console.log("The result of g after assignment is: " + g) // if the value is not assigned then the value is undefined
+
+        // declaration and assignment of variable
+        let name0 // declartion
+        name0 = "krishna"// assignment
+
+        let name1 = "radha rani" // declaration +assignment of variable
+
+        console.log('I am ' + name0) // prints krishna
+        name0 = name1 // reassignement of value in a variable
+        console.log('I am ' + name0) // prints radha rani
+
     </script>
 
     <!-- external js file  -->
