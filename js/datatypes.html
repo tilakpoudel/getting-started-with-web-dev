@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Js Data types</title>
+    <script>
+        let a = 10 // number 
+        let b = 'ram' // string
+        let person = { firstname: 'ram', lastName: 'Sharma', age: 17, rollno: 25 } // object
+        let arr = ['ram', 'shyam', 'hari','gopal']
+
+        console.log('my name is : ' + person.firstname + person.lastName)
+
+        console.log(' person is of type: ' + typeof person)
+        console.log(' a is of type: ' + typeof a)
+        console.log(' b is of type: ' + typeof b)
+
+        console.log(" i am array with values " + arr)
+        console.log(" i am array with index 0 " + arr[0])
+        console.log(" i am array with index 3 " + arr[3])
+
+        // iterate over all elemets
+
+        console.log('the array contains '+ arr.length + 'elements')
+
+        for (let index = 0; index < arr.length; index++) {
+            const element = arr[index]; 
+            console.log('i am ' + element) // ram , shyam, hari, gopal
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Datatypes in Javascript</h1>
+    <h1>See result in console</h1>
+</body>
+</html>
