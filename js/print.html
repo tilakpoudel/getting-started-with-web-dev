@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Output in Js</title>
+</head>
+<body>
+    <h1>Output methods in js </h1>
+    <p>
+        Message from Javascript: <span id="message"></span>
+    </p>
+    <ul>
+        <li>Console</li>
+        <li>Alert</li>
+        <li>Document.write</li>
+        <li>using Innerhtml</li>
+    </ul>
+
+    <script>
+        console.log('Hello from console...........')
+        alert('K xa khabar ???')
+        // document.write("Hello from document.write............")
+        let element = document.getElementById("message")
+        console.log(element)
+        element.innerHTML= 'Hello from Javascript';
+    </script>
+</body>
+</html>
