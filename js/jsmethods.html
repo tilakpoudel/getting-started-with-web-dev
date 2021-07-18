@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Js  Dom Methods</title>
+        <script>
+            function showMessage() {
+                console.log('show button clicked')
+            }
+            function hideMessage() {
+                console.log('hide button clicked')
+                let element = document.getElementById('message')
+                console.log(element)
+                element.style.display='none'
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Show Hide element using js</h1>
+        <h4>Message is: </h4>
+        <div>
+            <p id="message">Hello, How are you ?</p>
+        </div>
+        <div>
+            <button onclick="showMessage()">Show Message</button>
+            <button onclick="hideMessage()">Hide Message</button>
+        </div>
+    </body>
+</html>
