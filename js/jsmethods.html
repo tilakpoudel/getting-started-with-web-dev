@@ -2,17 +2,6 @@
 <html lang="en">
     <head>
         <title>Js  Dom Methods</title>
-        <script>
-            function showMessage() {
-                console.log('show button clicked')
-            }
-            function hideMessage() {
-                console.log('hide button clicked')
-                let element = document.getElementById('message')
-                console.log(element)
-                element.style.display='none'
-            }
-        </script>
     </head>
     <body>
         <h1>Show Hide element using js</h1>
@@ -24,5 +13,49 @@
             <button onclick="showMessage()">Show Message</button>
             <button onclick="hideMessage()">Hide Message</button>
         </div>
+
+        <br>
+        <img id="myImage" src="../images/pic_bulboff.gif" width="100" height="180">
+        <div>
+            <button onclick="turnOn()">Turn On</button>
+            <button onclick="turnOff()">Turn Off</button>
+        </div>
+        <br>
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+            style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+            Mouse Over Me
+        </div>
+
+        <script>
+            function showMessage() {
+                console.log('show button clicked')
+                let element = document.getElementById('message')
+                console.log(element)
+                element.style.display='block'
+            }
+            function hideMessage() {
+                console.log('hide button clicked')
+                let element = document.getElementById('message')
+                console.log(element)
+                element.style.display='none'
+            }
+
+            function turnOn() {
+                let image = document.getElementById('myImage')
+                image.src = '../images/pic_bulbon.gif'
+            }
+            function turnOff() {
+                let image = document.getElementById('myImage')
+                image.src = '../images/pic_bulboff.gif'
+            }
+
+            function mOver(element) {
+                element.innerHTML = "Thank You"
+            }
+
+            function mOut(element) {
+                element.innerHTML = "Mouse Over Me"
+            }
+        </script>
     </body>
 </html>
