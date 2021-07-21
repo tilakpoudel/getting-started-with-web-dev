@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Facebook</title>
+</head>
+<body>
+    
+    <div style="border: 1px solid black; text-align: center; width: 50%; margin: auto auto; padding: 5px; background-color: burlywood;">
+        <form action="">
+            <label for="username"> Username: </label> <br>
+            <input type="text" id="username" placeholder="Email Address or phone number.." autocomplete="username">
+            <span id="usernameError"></span>
+
+            <br> <br>
+
+            <label for="password"> Password: </label> <br>
+            <input type="password" id="password" placeholder="Password" autocomplete="current-password">
+            <br> <br>
+
+            <label for="confirmPassword"> Confirm Password: </label> <br>
+            <input type="password" id="confirmPassword" placeholder="confirmPassword" autocomplete="current-password">
+            <br> <br>
+
+            <button onclick="handleLogin(event)">Login</button>
+        </form>
+
+    </div>
+    <script>
+        function handleLogin (e) {
+            e.preventDefault() // stop default behaviour of html for ie submitting data
+            // console.log('login clicked...')
+
+            let usernameElement = document.getElementById('username');
+            // console.log(usernameElement)
+            let username = usernameElement.value
+
+            console.log('the length of username is '+ username.length)
+
+            if (username === '') {
+                usernameElement.style.border = '1px solid red';
+                document.getElementById('usernameError').innerHTML = " <br> Username is required...."
+            } else {
+                usernameElement.style.border = '2px solid green';
+                document.getElementById('usernameError').innerHTML = ""
+            } 
+        }
+    </script>
+</body>
+</html>
