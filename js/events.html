@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Js Events</title>
+</head>
+<body>
+    <h1>Javascript Events</h1>
+    <p>
+        HTML events are "things" that happen to HTML elements.
+        When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+    </p>
+    <ul>
+        <li onclick="clickMe()">onclick</li>
+        <li>onchange</li>
+        <li>onmouseover</li>
+        <li>onmouseout</li>
+        <li>onkeyup</li>
+        <li>onkeydown</li>
+        <li >onload</li>
+    </ul>
+    <button onclick="clickMe()">Click me</button>
+    <input type="text" onmouseover="mouseUp(this)" placeholder="change me">
+
+    <div>
+        <label for="username"> Username</label>
+        <input type="text" id="username" placeholder="Email Address or phone number..">
+
+        <label for="password"> Password</label>
+        <input type="text" id="password" placeholder="Password">
+
+        <button>Login</button>
+    </div>
+
+    <script>
+        function clickMe() {
+            alert('You clicked me.........')
+        }
+        // function changeMe() {
+        //     alert('You changed Me me.........')
+        // }
+        function mouseUp(element) {
+            alert('You changed Me me.........')
+            element.style.background = 'red'
+        }
+        
+    </script>
+</body>
+</html>
