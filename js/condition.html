@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript condition...</h2>
+
+    <script>
+        alert('Welcome to programming ....');
+        let mypercent = prompt("Enter your percentage . we will calutate your result.")
+
+        if (mypercent === null) {
+            alert("Please enter your percent... ");
+        } else {
+            percent = mypercent;
+
+            console.log("Your percent is " + mypercent);
+            console.log("Seee your result .....");
+
+            if (percent >= 80) {
+                console.log('distiction');
+                alert('distinction');
+            } else if (percent >= 60) {
+                alert('first division');
+            } else if (percent >= 50) {
+                alert('second division');
+            } else if (percent >= 32) {
+                alert('third division');
+            }
+            else {
+                alert('sorry you are fail.....');
+            }
+        }
+    </script>
+</body>
+</html>
