@@ -22,6 +22,21 @@
         console.log("my first hobbies is : " + myHobbies[0]); // access the array data by the index
         console.log("my second hobbies is : " + myHobbies[1]);
         console.log("my third hobbies is : " + myHobbies[2]);
+
+        // iteation of js array
+        console.log("the lenght of myHobies array is : " + myHobbies.length)
+
+        for (let index = 0; index < myHobbies.length; index++) {
+            const hobby = myHobbies[index]
+            console.log("My" + (index + 1) + "hobby is : " + hobby )
+        }
+
+        console.log("Multiplication table of 2.....................")
+        for (let index = 0; index <= 10; index++) {
+            const result = 2 * index
+            console.log( "2 * " + index + " = " + result );
+        }
+
     </script>
 </body>
 </html>
