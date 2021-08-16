@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd Even Tester</title>
+</head>
+<body>
+    <div>
+    <h3>Program to generate odd / even numbers.</h3>
+    <div >
+        <form>
+            <input type="number" name="target_number" id="target_number">
+            <button id="generate_odd_even_btn" onclick="generateNumber(event)">Generate</button>
+            <button id="generate_odd_even_btn" onclick="checkNumber(event)">Test</button>
+        </form>
+        <h3 id="testResult"></h3>
+        <h4>Odd Numbers are : <span id="odd_numbers"></span></h4>
+        <h4>Even Numbers Numbers are : <span id="even_numbers"></span></h4>
+    </div>
+</div>
+
+<script>
+    function generateNumber(e) {
+        e.preventDefault()
+        let targetNumber = parseInt(document.getElementById('target_number').value);
+
+        let oddNumbers = '';
+        let evenNumbers = '';
+
+        for (let index = 0; index <= targetNumber; index++) {
+            const remainder = index % 2
+
+            if (remainder === 0) {
+                evenNumbers += index + ', '
+            } else {
+                oddNumbers += index + ', '
+            }
+        }
+
+        document.getElementById('odd_numbers').innerHTML = oddNumbers
+        document.getElementById('even_numbers').innerHTML = evenNumbers
+    }
+
+    function checkNumber(e) {
+        e.preventDefault()
+        let testNumber = parseInt(document.getElementById('target_number').value);
+
+        const remainder = testNumber % 2
+        let result = ''
+        
+        if (remainder === 0) {
+            result += testNumber +' is EVEN'  
+        } else {
+            result += testNumber +' is ODD'  
+        }
+ 
+        document.getElementById('testResult').innerHTML = result
+    }
+</script>
+</body>
+</html>

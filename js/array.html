@@ -9,6 +9,10 @@
 <body>
     <h3>js array</h3>
      <p>JavaScript arrays are used to store multiple values in a single variable.</p>
+     <h1>Multiplication table of 2 is : </h1>
+     <div id="multiplication_result">
+
+     </div>
     <script>
         let hobby1 = 'singing';
         let hobby2 = 'dancing';
@@ -32,11 +36,18 @@
         }
 
         console.log("Multiplication table of 2.....................")
+
+        let multiplication_result = '';
+
         for (let index = 0; index <= 10; index++) {
             const result = 2 * index
-            console.log( "2 * " + index + " = " + result );
-        }
+            const formatted_result =  "2 * " + index + " = " + result + "<br>" ; 
 
+            multiplication_result += formatted_result // a+=b is equal to a = a + b
+        }
+        
+        document.getElementById('multiplication_result').innerHTML = multiplication_result
+        // console.log(multiplication_result)
     </script>
 </body>
 </html>
