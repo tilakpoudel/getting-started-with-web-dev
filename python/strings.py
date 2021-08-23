@@ -61,3 +61,11 @@ else:
     # if the number is divisble by 3 and 5 print "Fizz Buzz"
     # if the number is divisible by 3 print "FiZZ"
     # if the number is divisible by 5 print "BUzz"
+
+#check if the word is not present in given text 
+message = ' i am from  golok vrindaban. where are you from?'
+
+isPresent = 'am' not in message
+
+print(isPresent)
+
