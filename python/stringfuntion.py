@@ -38,4 +38,11 @@ print(myNewFriuts)
 print(len(myNewFriuts))
 
 
+# hello my name is "Radha".
+print ("hello my name is \"Radha\" .")
+print ('hello my name is \'Radha\' .')
+# marks obtained is 50/100
+print ('Marks Obtained is \t 50/100.')
+print ('Marks Obtained is \n 50/100.')
+
 
