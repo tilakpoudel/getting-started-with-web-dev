@@ -45,18 +45,73 @@ print(fruits)
 print(len(fruits))
 
 
-fruits[1] = 'Papaya'
+fruits[1] = 'Papaya' #replace itema at index 1 with Papaya
 print(fruits)
 
-# fruits[2:4] = ['Lemon', 'Litchi']
-# print(fruits)
+fruits[2:4] = ['Lemon', 'Litchi'] #[startindex: endindex] where endindex is excluded
+print(fruits)
+print('-----------------')
 
-# fruits[2:4] = ['Lemon', 'Litchi', 'guava']
-# print(fruits)
-# print(len(fruits))
-
-fruits[2:4] = ['Lemon']
+fruits[2:4] = ['Lemon1', 'Litchi1', 'guava', 'starfruit']
 print(fruits)
 print(len(fruits))
+
+fruits[2:4] = ['Lemon2']
+print(fruits)
+print(len(fruits))
+
+print('........................')
+
+# insert item at the specific position in the list 
+fruits.insert(3, "watermelon")
+print(fruits)
+print(len(fruits))
+
+print('........................')
+# add items to the end of the list
+fruits.append('cherry')
+print(fruits)
+print(len(fruits))
+
+print('+++++++++++++++========')
+
+# To append elements from another list to the current list, use the extend() method.
+friends = ['ram', 'laxman', 'sita']
+newFriends = ['gita', 'shyam', 'hari']
+
+print(friends)
+
+friends.extend(newFriends)
+
+print(newFriends)
+print(friends)
+
+# Remove item from list 
+# remove by value
+print('+++++++++++++++========')
+print(friends)
+friends.remove('sita') # remove sita from friends list
+print(friends)
+
+# remove by index
+friends.pop(0) # remove item with index 1 ie ram from friends list
+print(friends)
+print('+++++++++++++++========')
+
+friends.pop() # remove last item from the list if the  index is not given
+print(friends)
+
+print('+++++++++++++++========')
+
+del friends[1] # remove item at index 1 
+print(friends)
+
+# clear the list 
+friends.clear()
+print(friends)
+
+
+# del friends # delete the list
+# print(friends)
 
 
