@@ -111,7 +111,7 @@ friends.clear()
 print(friends)
 
 
-# del friends # delete the list
-# print(friends)
+del friends # delete the list
+print(friends)
 
 
