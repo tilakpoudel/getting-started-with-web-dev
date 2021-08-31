@@ -15,6 +15,11 @@ marks = [56, 85, 79, 60, 49]
 marks.sort()
 print(marks)
 
+print('........................ descending')
+
+for i in range(len(marks)-1, -1):
+  print(marks[i])
+
 print('........................')
 marks.sort(reverse=True)
 print(marks)
