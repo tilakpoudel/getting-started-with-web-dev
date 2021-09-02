@@ -43,3 +43,12 @@ fruits = tuple(fruitsList)
 print('------------------')
 print(fruits)
 
+# Unpacking tuples
+friends = ('hari', 'shyam', 'rita', 'govinda')
+(hari, shyam, rita, govinda) = friends
+print('------------------')
+
+print('i am ' + hari)
+print('i am ' + shyam)
+print('i am ' + rita)
+print('i am ' + govinda)
