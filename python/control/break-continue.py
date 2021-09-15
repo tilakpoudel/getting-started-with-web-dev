@@ -27,3 +27,17 @@ for i in range(10):
   print(i)
   print('hello')
   print('hi')
+
+fruits= ['apple', 'banana', 'orange']
+print('----------------')
+for item in fruits: 
+  if(item == 'banana'):
+    break
+  print(item)
+
+print('----------------')
+for item in fruits: 
+  if(item == 'banana'):
+    continue
+  print(item)
+
